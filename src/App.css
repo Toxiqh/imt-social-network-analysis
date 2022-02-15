@@ -1,40 +1,44 @@
 .App {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  width: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
 }
 
-.App-footer{
-  margin-top: 1rem;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #236084;
-  color: white;
-  font-size: 0.8em;
+.App-footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #236084;
+    color: white;
+    font-size: 0.8em;
 }
 
 .App-header {
-  background-color: #236084;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  margin-top: 0.5em;
-  padding: 0em 1em 0em 1em;
-  border-radius: 1em;
-  font-size: 1.5em;
+    background-color: #236084;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 0.5em;
+    padding: 0 1em 0 1em;
+    border-radius: 1em;
+    font-size: 1.5em;
 }
 
 .App-main {
-  background-color: white;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 2em;
 }
