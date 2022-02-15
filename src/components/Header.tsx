@@ -1,7 +1,7 @@
 import React from "react";
 
 const Header = () => (
-  <header>
+  <header className="App-header">
     <p>
       Bienvenue sur notre application d'analyse de réseaux sociaux
     </p>
