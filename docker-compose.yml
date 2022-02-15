@@ -6,7 +6,7 @@ services:
        container_name: mariadb
        restart: always
        environment:
-          MYSQL_USER: 'user'
+          MYSQL_USER: user
           MYSQL_PASSWORD: user
           MYSQL_DATABASE: projet_nosql
           MYSQL_ROOT_PASSWORD: root
@@ -14,20 +14,22 @@ services:
            - '3306:3306'
        volumes:
            - ./mariadb_database/:/var/lib/mysql/
-    # Neo4j database
+    # Neo4j database
     neo4j:
         image: 'neo4j:latest'
         container_name: neo4j
         restart: always
         ports:
             - '7474:7474'
+            - '7687:7687'
         volumes:
             - ./neo4j_database/:/data/
     # phpMyAdmin for MariaDB
     phpmyadmin:
         image: phpmyadmin/phpmyadmin:latest
+        container_name: no_sql_phpmyadmin
         ports:
-            - 8100:80
+            - '8100:80'
         environment:
             PMA_ARBITRARY: 1
             PMA_HOST: mariadb
