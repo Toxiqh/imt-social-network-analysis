@@ -1,0 +1,47 @@
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 39px;
+}
+
+.button-selected-element {
+    background: #236084;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.rotate-button-selected-element {
+    background: #236084;
+    transform: translate(100px);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.not-selected-element {
+    background: #9F9993;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.rotate-not-selected-element {
+    background: #9F9993;
+    transform: translate(-100px);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.switch-btn {
+    width: 100px;
+    height: 39px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.switch-btn p{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    letter-spacing: 0.2px;
+}
