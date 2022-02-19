@@ -13,8 +13,12 @@
     border-color: #236084;
 }
 
-
 .Btn:hover {
     background-color: white;
     color: black;
+}
+
+.Btn-clear {
+    background-color: #9F9993;
+    border-color: #9F9993;
 }
