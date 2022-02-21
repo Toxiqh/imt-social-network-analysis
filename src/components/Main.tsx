@@ -7,12 +7,18 @@ import ClearButton from "./ClearButton";
 import InsertBtn from "./InsertBtn";
 import SelectBtn from "./SelectBtn";
 import RunButton from "./RunButton";
+import ActionForm from "./ActionForm";
 
 const Main = () => {
   const [result, setResult] = useState<string>('');
+  const [formState, setFormState] = useState<string>('hidden');
 
   function handleChangeResult(newResult: string) {
     setResult(newResult);
+  }
+
+  function setActionForm(newState: string) {
+    setFormState(newState);
   }
 
   function handleClear() {
@@ -26,11 +32,14 @@ const Main = () => {
       </div>
       <div className="Actions-Btn-Container">
         <div className="Action-Btn">
-          <InsertBtn/>
+          <InsertBtn click={setActionForm}/>
         </div>
         <div className="Action-Btn">
-          <SelectBtn/>
+          <SelectBtn click={setActionForm}/>
         </div>
+      </div>
+      <div className="Action-Form">
+        <ActionForm action={formState}/>
       </div>
       <div className="Actions-Btn-Container">
         <RunButton/>
