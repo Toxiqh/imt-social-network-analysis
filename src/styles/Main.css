@@ -14,3 +14,10 @@
 .Action-Btn:first-child {
     margin-right: 80px;
 }
+
+.Action-Form {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

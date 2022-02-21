@@ -1,0 +1,24 @@
+.insert-form {
+    margin-top: 1em;
+    border-style: solid;
+    border-width: 1px;
+    width: 90%;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    border-color: #9F9993;
+    transition-duration: 0.6s;
+}
+
+.form-container {
+    margin-bottom: 1em;
+}
+
+.radio-btn-container {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.radio-btn-container label:first-of-type {
+    margin-right: 2em;
+}

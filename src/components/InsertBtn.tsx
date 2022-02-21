@@ -1,10 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../styles/ActionBtn.css'
 
-const InsertBtn = () => {
+type Props = {
+    click: (newState: string) => void;
+}
+
+const InsertBtn = (props: Props) => {
     return (
-        <div className="Btn">Insertion de données</div>
-    )
+        <div className="Btn" onClick={() => props.click('insert')}>Insertion de données</div>
+)
 };
 
 export default InsertBtn;
