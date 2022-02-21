@@ -6,7 +6,6 @@ type Props = {
 }
 
 const ActionForm = (props: Props) => {
-
   if (props.action == 'insert') {
     return (
         <div className="insert-form">
@@ -45,7 +44,6 @@ const ActionForm = (props: Props) => {
         <div></div>
     )
   }
-
 };
 
 export default ActionForm;
