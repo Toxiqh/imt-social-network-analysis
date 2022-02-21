@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import {Stack} from 'react-bootstrap';
+import '../styles/Main.css'
 import Results from './Results';
 import Switch from './Switch';
 import ClearButton from "./ClearButton";
 import InsertBtn from "./InsertBtn";
 import SelectBtn from "./SelectBtn";
-import '../styles/Main.css'
+import RunButton from "./RunButton";
 
 const Main = () => {
   const [result, setResult] = useState<string>('');
@@ -30,6 +31,9 @@ const Main = () => {
         <div className="Action-Btn">
           <SelectBtn/>
         </div>
+      </div>
+      <div className="Actions-Btn-Container">
+        <RunButton/>
       </div>
       <div className="Result-display">
         <Results result={result} onChange={handleChangeResult}/>
