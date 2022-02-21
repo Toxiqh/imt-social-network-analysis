@@ -36,7 +36,7 @@ const ActionForm = (props: Props) => {
     )
   } else if (props.action == 'select') {
     if (selectedRequest == 'requete1') {
-      const form =
+      var form =
           <>
             <h3>Requête 1</h3>
             <p>{titleReq1}</p>
@@ -46,7 +46,7 @@ const ActionForm = (props: Props) => {
             </div>
           </>;
     } else if (selectedRequest == 'requete2') {
-      const form =
+      var form =
           <>
             <h3>Requête 2</h3>
             <p>{titleReq2}</p>
@@ -63,7 +63,7 @@ const ActionForm = (props: Props) => {
             </div>
           </>;
     } else if (selectedRequest == 'requete3') {
-      const form =
+      var form =
           <>
             <h3>Requête 3</h3>
             <p>{titleReq3}</p>
@@ -81,7 +81,7 @@ const ActionForm = (props: Props) => {
           </>;
 
     } else {
-      const form = <h3>error</h3>;
+      var form = <h3>error</h3>;
     }
 
     return (
