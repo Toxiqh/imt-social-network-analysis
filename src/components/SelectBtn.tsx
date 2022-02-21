@@ -1,10 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../styles/ActionBtn.css'
 
-const SelectBtn = () => {
-    return (
-        <div className="Btn">Récupérer des données</div>
-    )
-};
+const SelectBtn = () => (
+  <div className="Btn">Récupérer des données</div>
+);
 
 export default SelectBtn;
