@@ -9,10 +9,17 @@
 
 .Action-Btn {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Action-Btn:first-child {
-    margin-right: 80px;
+    margin-right: 20px;
+}
+
+.Action-Btn:last-child {
+    margin-left: 20px;
 }
 
 .Action-Form {
