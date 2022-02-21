@@ -13,7 +13,6 @@ const ActionForm = (props: Props) => {
   const titleReq3: string = 'Nombre de personnes dans un cercle de followers ayant commandé un produit spécifique';
 
   function changeSelectedRequest(newRequest: string) {
-    console.log('New state : ' + newRequest);
     setSelectedRequest(newRequest);
   }
 
@@ -36,9 +35,8 @@ const ActionForm = (props: Props) => {
         </div>
     )
   } else if (props.action == 'select') {
-
     if (selectedRequest == 'requete1') {
-      var form =
+      const form =
           <>
             <h3>Requête 1</h3>
             <p>{titleReq1}</p>
@@ -48,7 +46,7 @@ const ActionForm = (props: Props) => {
             </div>
           </>;
     } else if (selectedRequest == 'requete2') {
-      var form =
+      const form =
           <>
             <h3>Requête 2</h3>
             <p>{titleReq2}</p>
@@ -65,7 +63,7 @@ const ActionForm = (props: Props) => {
             </div>
           </>;
     } else if (selectedRequest == 'requete3') {
-      var form =
+      const form =
           <>
             <h3>Requête 3</h3>
             <p>{titleReq3}</p>
@@ -83,7 +81,7 @@ const ActionForm = (props: Props) => {
           </>;
 
     } else {
-      var form = <h3>error</h3>;
+      const form = <h3>error</h3>;
     }
 
     return (
